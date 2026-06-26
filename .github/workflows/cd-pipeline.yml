@@ -9,7 +9,7 @@ on:
 
 env:
   PORT: 5001
-  IMAGE: ${{ secrets.DOCKER_USER }}/playwright-ts-learn:${{github.sha}}
+  IMAGE: ${{ secrets.DOCKER_USER }}/playwright_ts_cap_prj:${{github.sha}}
 jobs:
   test:
     runs-on: ubuntu-latest
