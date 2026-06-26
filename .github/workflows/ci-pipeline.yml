@@ -18,12 +18,12 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install dependencies
-        run: pnpm ci
+        run: npm ci
 
       # - name: Test application
-      #   run: pnpm test
+      #   run: npm test
 
       - name: Build application
         run: |
           echo "Run command to build the application if present"
-          pnpm run build --if-present
+          npm run build --if-present
