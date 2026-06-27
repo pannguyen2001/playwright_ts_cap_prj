@@ -8,6 +8,7 @@ export const positiveLoginTestCases: LoginTestCase[] = [
 		description: "Successful login with valid credentials",
 		email: EMAIL,
 		password: PASSWORD,
+		role: "admin",
 		priority: "CRITICAL",
 		isAllBrowser: true,
 		testCaseType: "POSITIVE",
@@ -22,6 +23,7 @@ export const positiveLoginTestCases: LoginTestCase[] = [
 		email: EMAIL,
 		password: PASSWORD,
 		priority: "CRITICAL",
+		role: "admin",
 		isAllBrowser: true,
 		additionalAction: "logout",
 		testCaseType: "POSITIVE",
@@ -38,6 +40,7 @@ export const negativeLoginTestCases: LoginTestCase[] = [
 		email: "abc",
 		password: PASSWORD,
 		priority: "CRITICAL",
+		role: "admin",
 		isAllBrowser: true,
 		testCaseType: "NEGATIVE",
 		expectedResult: {
@@ -51,6 +54,7 @@ export const negativeLoginTestCases: LoginTestCase[] = [
 		email: EMAIL,
 		password: "abcdefghi",
 		priority: "CRITICAL",
+		role: "admin",
 		isAllBrowser: true,
 		testCaseType: "NEGATIVE",
 		expectedResult: {
@@ -64,6 +68,7 @@ export const negativeLoginTestCases: LoginTestCase[] = [
 		email: EMAIL,
 		password: "abc",
 		priority: "CRITICAL",
+		role: "admin",
 		isAllBrowser: true,
 		testCaseType: "NEGATIVE",
 		expectedResult: {
@@ -77,6 +82,7 @@ export const negativeLoginTestCases: LoginTestCase[] = [
 		email: "",
 		password: PASSWORD,
 		priority: "CRITICAL",
+		role: "admin",
 		isAllBrowser: true,
 		testCaseType: "NEGATIVE",
 		expectedResult: {
@@ -89,6 +95,7 @@ export const negativeLoginTestCases: LoginTestCase[] = [
 		description: "Login fails when password is empty",
 		email: EMAIL,
 		password: "",
+		role: "admin",
 		priority: "CRITICAL",
 		isAllBrowser: true,
 		testCaseType: "NEGATIVE",
@@ -103,6 +110,7 @@ export const negativeLoginTestCases: LoginTestCase[] = [
 		email: "",
 		password: "",
 		priority: "CRITICAL",
+		role: "admin",
 		isAllBrowser: true,
 		testCaseType: "NEGATIVE",
 		expectedResult: {
@@ -116,6 +124,7 @@ export const negativeLoginTestCases: LoginTestCase[] = [
 		email: "abcdef123",
 		password: "abcdef",
 		priority: "CRITICAL",
+		role: "admin",
 		isAllBrowser: true,
 		testCaseType: "NEGATIVE",
 		expectedResult: {

@@ -1,11 +1,4 @@
-// ─── Import from YOUR fixture, not from "@playwright/test" directly ──────────
-//
-// This single import gives you:
-//   - `test`   → Playwright's test() with your fixtures injected
-//   - `expect` → Playwright's expect (re-exported from the fixture)
-//
 import { test, expect } from "@/fixtures/index";
-
 import { FE_BASE_URL, PROJECT_NAME, OWNER } from "@/configs/constants";
 import { setMetadata } from "@/utils/allure.helpers";
 import { LoginTestCase } from "@/types/testcase.type";
@@ -15,8 +8,6 @@ import {
 } from "@/testCases/login.testcase";
 import { TestMetadata } from "@/types/common.type";
 import logger from "@/utils/log4js";
-
-// import { createLogger } from "@/utils/logger";
 import { createLogger } from "@/utils/log4js";
 
 const log = createLogger("LoginSpec");

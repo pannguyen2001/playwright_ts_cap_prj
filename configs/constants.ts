@@ -42,6 +42,7 @@ type Browser = keyof typeof BrowserEnum;
 enum TestPageEnum {
 	LOGIN = "login",
 	DASHBOARD = "dashboard",
+	PROFILE = "profile"
 }
 type TestPage = keyof typeof TestPageEnum;
 
