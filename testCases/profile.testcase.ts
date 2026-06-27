@@ -9,6 +9,7 @@ export const positiveProfileTestCases: ProfileTestCase[] = [
 		email: EMAIL,
 		password: PASSWORD,
 		priority: "CRITICAL",
+		role: "admin",
 		isAllBrowser: true,
 		testCaseType: "POSITIVE",
 		expectedResult: {
