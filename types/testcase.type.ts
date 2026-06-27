@@ -1,10 +1,12 @@
 import { Priority, TestcaseType } from "@/configs/constants";
+import { Role } from "@/types/common.type";
 
 export interface CommonTestCase {
 	testId?: string | "unknown"; // unique id for the test case
 	testName: string;
 	description: string;
 	priority: Priority;
+	role: Role;
 	expectedResult?: any;
 	isAllBrowser?: boolean; // if this field id false, browserName needs to be filled
 	browserName?: string[];

@@ -15,11 +15,19 @@ export interface TestMetadata {
 	type?: string;
 }
 
+export type Role = "admin" | "student" | "teacher";
+
+export type RoleConfig = {
+	role: Role;
+	credentials: { email: string; password: string };
+};
+
 export interface Account {
 	_id: string;
-	role_name: string;
+	role_name: Role;
 	full_name: string;
 	email: string;
+	password: string;
 	date_of_birth: string;
 	gender: "Nữ" | "Nam" | "Khác";
 	is_deleted: boolean;
