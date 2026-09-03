@@ -5,3 +5,7 @@ node_modules/
 dist/
 .env
 note.txt
+package-loc.json
+pnpm-lock.yaml
+pnpm-workspace.yaml
+
